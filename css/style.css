@@ -1,0 +1,633 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Css de Index*/
+
+body {
+    background-color: #e4ddd7;
+}
+
+.padreGridsIndex {
+    display: grid;
+    column-gap: 10rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, fr);
+    grid-template-areas: " subTitulo subTitulo subTitulo subTitulo"
+        "  imgMu  imgMu imgMuDos imgMuDos"
+        " parrIn parrIn parrIn parrIn"
+        " secDIn secDIn secDIn secDIn"
+        " fonIclou fonIclou fonIclou fonIclou"
+        " padreAcc padreAcc padreCli padreCli"
+        " footer footer footer footer";
+}
+
+.subTitulo {
+    grid-area: subTitulo;
+}
+
+.imagenMuestra {
+    grid-area: imgMu;
+}
+
+.imagenMuestraDos {
+    grid-area: imgMuDos;
+}
+
+.parrafoIndex {
+    grid-area: parrIn;
+}
+
+.sectionDosIndex {
+    grid-area: secDIn;
+}
+
+.fondoIcloud {
+    grid-area: fonIclou;
+}
+
+.padreAccesibilidad {
+    grid-area: padreAcc;
+    padding: 2.5rem;
+    height: 30rem;
+}
+
+.padreClima {
+    grid-area: padreCli;
+    padding: 2.5rem;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*Fin d grids*/
+
+.header {
+    background-color: #918b8b;
+    padding: 0.6rem;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hijos {
+    margin: 0.6rem;
+    list-style: none;
+}
+
+.header nav ul li a:hover {
+    color: white;
+    font-weight: 1.8rem;
+
+}
+
+.hijos a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.imagenUno {
+    background-image: url("../img/elfuturo.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 31.2rem;
+}
+
+.imagenUno h2 {
+    color: white;
+    text-align: center;
+    padding: 15.6rem;
+    font-size: 5rem;
+    font-family: 'Square Peg', cursive;
+}
+
+
+main h1 {
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    color: #777474;
+    font-size: 3.1rem;
+    margin: 0 0 1rem 0;
+}
+
+.subTitulo {
+    margin: 1.8rem;
+    font-family: 'Sriracha', cursive;
+    text-align: center;
+    color: #777474;
+    font-size: 1.8rem;
+}
+
+.muyPronto {
+    background-color: #8f8787;
+    margin: 0.6rem;
+    padding: 0.6rem;
+    width: 20rem;
+
+}
+
+.imagenMuestra {
+    background-image: linear-gradient(black, #c7c0c0);
+    width: 21.8rem;
+    height: 12.5rem;
+    border-radius: 0.5rem;
+    margin: 4% 30% 10% 30%;
+}
+
+.imagenMuestra:hover{
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    background-image: linear-gradient(to bottom,#c7c0c0,black);
+}
+
+@keyframes girar{
+    from{
+        transform: rotate(-10deg);
+    }
+    to{
+        transform: rotate(10deg);
+    }
+}
+
+.imagenMuestra img {
+    padding: 0.9rem 0.6rem 0.6rem 1.5rem;
+}
+
+.imagenMuestraDos {
+    background-image: linear-gradient(black, #c7c0c0);
+    padding: 0 0 0 24px;
+    width: 21.8rem;
+    height: 12.5rem;
+    border-radius: 0.5rem;
+    margin: 4% 50% 10% 0;
+}
+
+.imagenMuestraDos:hover{
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    background-image: linear-gradient(to bottom,#c7c0c0,black);
+}
+
+.imagenMuestraDos img {
+    padding: 0.9rem 0.6rem 0.6rem 0.1rem;
+}
+
+.parrafoIndex p {
+    font-size: 1.5rem;
+    margin: 0 1.25rem 0 1.25rem;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.reservar {
+    text-align: center;
+    margin: 0.9rem 0 0 0;
+}
+
+
+.colorSecundario {
+    background-color: white;
+}
+
+.subTituloDos {
+    margin: 5rem 0 0 0;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Inter', sans-serif;
+    color: #777474;
+}
+
+.parrafoIndexDos {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.parrafoIndexTres {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.parrafoIndexCuatro {
+    margin: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.subTituloTres {
+    margin: 0 0 0 2rem;
+    padding: 2% 0 0 0;
+    font-size: 2.5rem;
+    color: #a7267c;
+}
+
+.parrafoIndexCinco {
+    margin: 0.5rem 0 4.3rem 0.6rem;
+    width: 100%;
+    padding: 2% 1% 0 1%;
+    font-size: 25px;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+}
+
+.imagenAccesibilidad img {
+    width: 80px;
+}
+
+.imagenClima img {
+    width: 80px;
+}
+
+.parrafoAcc p {
+    font-size: 25px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.parrafoClima p {
+    font-size: 25px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+footer {
+    background-color: black;
+    height: 1%;
+    margin: 100px 0 0 0;
+    text-align: center;
+}
+
+footer p{
+    padding: 1% 0 0 0;
+}
+
+.fondoIcloud {
+    background-color: rgb(41, 39, 39);
+    height: 90%
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.fixed img {
+    width: 50px;
+}  
+
+@media screen and (max-width: 1024px){
+    
+    .imagenMuestra{
+        margin: 4% 0 10% 10%; 
+    }
+    .imagenMuestraDos{
+        margin: 4% 0 10% 0;
+    }
+}
+
+@media screen and (max-width:1000px){
+
+    .padreGridsIndex {
+        display: grid;
+        column-gap: 10rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(9, fr);
+        grid-template-areas: "subTitulo subTitulo subTitulo subTitulo"
+                             "imgMu  imgMu imgMu  imgMu"
+                             "imgMuDos imgMuDos imgMuDos imgMuDos"
+                             "parrIn parrIn parrIn parrIn"
+                             "secDIn secDIn secDIn secDIn"
+                             "fonIclou fonIclou fonIclou fonIclou"
+                             "padreAcc padreAcc padreAcc padreAcc"
+                             "padreCli padreCli padreCli padreCli"
+                             "footer footer footer footer";
+    }
+
+    .fondoIcloud{
+        height: 90%;
+    }
+
+    .parrafoIndexCinco{
+        padding: 0 1% 2% 0;
+    }
+    .imagenMuestra{
+        margin:  5% auto;
+    }
+    .imagenMuestraDos{
+        margin: 5% auto;
+    }
+    .parrafoIndex{
+        margin: 0 0 0 5%;
+    }
+
+}
+
+/*Css de Iphone*/
+
+.padreGridsIphone {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100vh;
+    row-gap: 3.1rem;
+    grid-template-areas: " priPu segPu"
+                         " terPu cuarPu"
+                         " accIpho pAccPar"
+                         " footer  footer";
+}
+
+.mainIphone h1{
+margin: 0 0 6rem 0;
+}
+
+.primerPublicacion{
+    margin: 0 0 0 25%;
+}
+
+.primerPublicacion p{
+    width: 60%;
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.primerPublicacion img{
+    padding: 0.75rem 0 0 1.25rem;
+}
+
+.fondoPublicaciones{
+    background-image: linear-gradient(black, #c7c0c0);
+    width: 20rem;
+    height: 13rem;
+    border-radius: 1rem;
+}
+
+.segundaPublicacion{
+    margin: 0 0 0 25%;
+ 
+}
+
+.segundaPublicacion p{
+    width: 74%;
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+
+.segundaPublicacion img{
+    padding: 0.5rem 0 0 1.7rem;
+}
+
+.fondoPublicacionesDos{
+    background-image: linear-gradient(black, #c7c0c0);
+    width: 20rem;
+    height: 13rem;
+    border-radius: 1rem;
+}
+
+.terceraPublicacion{
+    margin: 0 0 0 25%;
+}
+
+.terceraPublicacion p{
+    width: 60%;
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.terceraPublicacion img{
+    padding: 0.7rem 0 0 1.3rem;
+}
+
+.fondoPublicacionesTres{
+    background-image: linear-gradient(black, #c7c0c0);
+    width: 13.5rem;
+    height: 14.5rem;
+    border-radius: 1rem;
+}
+
+.cuartaPublicacion{
+    margin: 0 0 0 25%;
+}
+
+.cuartaPublicacion p{
+    width: 60%;
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+.cuartaPublicacion img{
+    padding: 0.7rem 0 0 1.3rem;
+}
+
+.fondoPublicacionesCuatro{
+    background-image: linear-gradient(black, #c7c0c0);
+    width: 13.5rem;
+    height: 14.5rem;
+    border-radius: 1rem;
+}
+
+.comprar{
+    margin: 1rem 0 0 0;
+
+}
+
+.accesibilidadIphone h5{
+    text-align: center;
+    margin: 5rem 0 ;
+    font-size: 2rem;
+}
+
+.accesibilidadIphoneParrafo{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 1.5rem;
+    padding: 0 1.2rem 0 1.2rem;
+}
+
+.bloqueItems{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0 0 0;
+    font-family: 'Roboto Flex', sans-serif;
+    
+}
+
+.columnasIphone li{
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width:1024px) {
+
+    .padreGridsIphone {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        height: 100vh;
+        row-gap: 3.1rem;
+        grid-template-areas: "priPu"
+                             "segPu"
+                             "terPu"
+                             "cuarPu"
+                             "accIpho"
+                             "pAccPar"
+                             "footer";
+    }
+
+    .accesibilidadIphoneParrafo p{
+        padding: 0 1rem;
+    }
+
+}
+
+/*Ipad*/
+
+.mainIpad h1 {
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    margin: 20px 0px 40px 0px;
+    color: #777474;
+    font-size: 50px;
+}
+
+.sectionIpad h2 {
+    margin: 30px 30px 10px 30px;
+    font-family: 'Sriracha', cursive;
+    color: #cf1883;
+    font-size: 30px;
+}
+
+.sectionIpad p {
+    font-size: 25px;
+    margin: 0 20px 0 20px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.imagenDosIpad {
+    background-color: rgb(41, 39, 39);
+    width: 400px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.imagenDosIpad img {
+    padding: 20px;
+    width: 400px;
+}
+
+.parrafoDosIpad {
+    width: 600px;
+    font-size: 25px;
+    margin: 0 20px 0 700px;
+    font-family: 'PT Sans', sans-serif;
+    text-align: left;
+}
+
+.imagenesIpad {
+    margin: 30px 0 90px 650px;
+}
+
+.imagenesIpad img {
+    width: 250px;
+}
+
+.ipadProMax {
+    margin: 30px 30px 10px 30px;
+    font-family: 'Sriracha', cursive;
+    color: #777474;
+    font-size: 30px;
+}
+
+/*AirdPods*/
+
+.mainAirdPods h1 {
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    margin: 20px 0px 40px 0px;
+    color: #866cce;
+    font-size: 50px;
+}
+
+.sectionAird {
+    margin: 70px 0 0 0;
+}
+
+.sectionAird h2 {
+    font-family: 'Sriracha', cursive;
+    text-align: center;
+    color: #777474;
+    font-size: 30px;
+}
+
+.sectionAird p {
+    background-color: #866cce;
+    height: 100px;
+    font-size: 25px;
+    padding: 15px 0 10px 10px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.airdUsos {
+    margin: 90px 0 0 0;
+}
+
+.airdUsos h3 {
+    margin: 0 0 30px 900px;
+    color: #866cce;
+    font-size: 25px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.airdUsos p {
+    font-size: 25px;
+    font-family: 'PT Sans', sans-serif;
+    width: 500px;
+    margin: 0 0 0 800px;
+}
+
+.airdImagenUso img {
+    width: 500px;
+}
+
+/*Contacto*/
+
+.mainContacto {
+    margin: 40px 0 20px 20px;
+}
+
+.sectionContacto {
+    margin: 0 0 20px 20px;
+}
+
+.sectionContacto ul li {
+    list-style: none;
+}
+
+.formContacto {
+    margin: 0 0 0 20px;
+    width: 300px;
+}
+
+.formContacto fieldset {
+    padding: 10px 0 10px 50px;
+}
+
+.sectionContacto div {
+    font-size: 20px;
+    font-weight: 200px;
+    margin: 0 0 5px 0;
+}
