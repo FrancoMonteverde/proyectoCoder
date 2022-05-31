@@ -108,9 +108,10 @@ header {
 .imagenUno h2 {
     color: white;
     text-align: center;
-    padding: 15.6rem;
     font-size: 5rem;
     font-family: 'Square Peg', cursive;
+    text-align: center;
+    padding: 20% 0;
 }
 
 
@@ -146,18 +147,19 @@ main h1 {
     margin: 4% 30% 10% 30%;
 }
 
-.imagenMuestra:hover{
+.imagenMuestra:hover {
     animation-name: girar;
     animation-duration: 2s;
     animation-timing-function: linear;
-    background-image: linear-gradient(to bottom,#c7c0c0,black);
+    background-image: linear-gradient(to bottom, #c7c0c0, black);
 }
 
-@keyframes girar{
-    from{
+@keyframes girar {
+    from {
         transform: rotate(-10deg);
     }
-    to{
+
+    to {
         transform: rotate(10deg);
     }
 }
@@ -175,11 +177,11 @@ main h1 {
     margin: 4% 50% 10% 0;
 }
 
-.imagenMuestraDos:hover{
+.imagenMuestraDos:hover {
     animation-name: girar;
     animation-duration: 2s;
     animation-timing-function: linear;
-    background-image: linear-gradient(to bottom,#c7c0c0,black);
+    background-image: linear-gradient(to bottom, #c7c0c0, black);
 }
 
 .imagenMuestraDos img {
@@ -239,7 +241,7 @@ main h1 {
 .parrafoIndexCinco {
     margin: 0.5rem 0 4.3rem 0.6rem;
     width: 100%;
-    padding: 2% 1% 0 1%;
+    padding: 2% 5% 0 1%;
     font-size: 25px;
     font-family: 'PT Sans', sans-serif;
     color: white;
@@ -262,6 +264,7 @@ main h1 {
     font-size: 25px;
     font-family: 'Roboto Flex', sans-serif;
 }
+
 footer {
     background-color: black;
     height: 1%;
@@ -269,7 +272,7 @@ footer {
     text-align: center;
 }
 
-footer p{
+footer p {
     padding: 1% 0 0 0;
 }
 
@@ -286,53 +289,77 @@ footer p{
 
 .fixed img {
     width: 50px;
-}  
-
-@media screen and (max-width: 1024px){
-    
-    .imagenMuestra{
-        margin: 4% 0 10% 10%; 
-    }
-    .imagenMuestraDos{
-        margin: 4% 0 10% 0;
-    }
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1000px) {
 
     .padreGridsIndex {
         display: grid;
         column-gap: 10rem;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(9, fr);
-        grid-template-areas: "subTitulo subTitulo subTitulo subTitulo"
-                             "imgMu  imgMu imgMu  imgMu"
-                             "imgMuDos imgMuDos imgMuDos imgMuDos"
-                             "parrIn parrIn parrIn parrIn"
-                             "secDIn secDIn secDIn secDIn"
-                             "fonIclou fonIclou fonIclou fonIclou"
-                             "padreAcc padreAcc padreAcc padreAcc"
-                             "padreCli padreCli padreCli padreCli"
-                             "footer footer footer footer";
-    }
+        grid-template-areas: "subTitulo subTitulo"
+                             "imgMu  imgMu"
+                             "imgMuDos imgMuDos"
+                             "parrIn parrIn"
+                             "secDIn secDIn"
+                             "fonIclou fonIclou"
+                             "padreAcc padreAcc"
+                             "padreCli padreCli"
+                             "footer footer";
 
-    .fondoIcloud{
-        height: 90%;
     }
+        .imagenMuestra {
+            grid-area: imgMu;
+        }
 
-    .parrafoIndexCinco{
-        padding: 0 1% 2% 0;
-    }
-    .imagenMuestra{
-        margin:  5% auto;
-    }
-    .imagenMuestraDos{
-        margin: 5% auto;
-    }
-    .parrafoIndex{
-        margin: 0 0 0 5%;
-    }
+        .imagenMuestraDos {
+            grid-area: imgMuDos;
+        }
 
+        .parrafoIndex {
+            grid-area: parrIn;
+        }
+
+        .sectionDosIndex {
+            grid-area: secDIn;
+        }
+
+        .fondoIcloud {
+            grid-area: fonIclou;
+        }
+
+        .padreAccesibilidad {
+            grid-area: padreAcc;
+        }
+
+        .padreClima {
+            grid-area: padreCli;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        .imagenUno{
+            text-align: center;
+        }
+
+        .fondoIcloud {
+            height: 90%;
+        }
+
+        .imagenMuestra {
+            margin: 5% auto;
+        }
+
+        .imagenMuestraDos {
+            margin: 5% auto;
+        }
+
+        .parrafoIndex {
+            margin: 0 0 0 5%;
+        }
 }
 
 /*Css de Iphone*/
@@ -344,43 +371,43 @@ footer p{
     height: 100vh;
     row-gap: 3.1rem;
     grid-template-areas: " priPu segPu"
-                         " terPu cuarPu"
-                         " accIpho pAccPar"
-                         " footer  footer";
+        " terPu cuarPu"
+        " accIpho pAccPar"
+        " footer  footer";
 }
 
-.mainIphone h1{
-margin: 0 0 6rem 0;
+.mainIphone h1 {
+    margin: 0 0 6rem 0;
 }
 
-.primerPublicacion{
+.primerPublicacion {
     margin: 0 0 0 25%;
 }
 
-.primerPublicacion p{
+.primerPublicacion p {
     width: 60%;
     font-family: 'Roboto Flex', sans-serif;
     margin: 0 0 1rem 0;
     font-size: 1.2rem;
 }
 
-.primerPublicacion img{
+.primerPublicacion img {
     padding: 0.75rem 0 0 1.25rem;
 }
 
-.fondoPublicaciones{
+.fondoPublicaciones {
     background-image: linear-gradient(black, #c7c0c0);
     width: 20rem;
     height: 13rem;
     border-radius: 1rem;
 }
 
-.segundaPublicacion{
+.segundaPublicacion {
     margin: 0 0 0 25%;
- 
+
 }
 
-.segundaPublicacion p{
+.segundaPublicacion p {
     width: 74%;
     font-family: 'Roboto Flex', sans-serif;
     margin: 0 0 1rem 0;
@@ -388,87 +415,88 @@ margin: 0 0 6rem 0;
 }
 
 
-.segundaPublicacion img{
+.segundaPublicacion img {
     padding: 0.5rem 0 0 1.7rem;
 }
 
-.fondoPublicacionesDos{
+.fondoPublicacionesDos {
     background-image: linear-gradient(black, #c7c0c0);
     width: 20rem;
     height: 13rem;
     border-radius: 1rem;
 }
 
-.terceraPublicacion{
+.terceraPublicacion {
     margin: 0 0 0 25%;
 }
 
-.terceraPublicacion p{
+.terceraPublicacion p {
     width: 60%;
     font-family: 'Roboto Flex', sans-serif;
     margin: 0 0 1rem 0;
     font-size: 1.2rem;
 }
 
-.terceraPublicacion img{
+.terceraPublicacion img {
     padding: 0.7rem 0 0 1.3rem;
 }
 
-.fondoPublicacionesTres{
+.fondoPublicacionesTres {
     background-image: linear-gradient(black, #c7c0c0);
     width: 13.5rem;
     height: 14.5rem;
     border-radius: 1rem;
 }
 
-.cuartaPublicacion{
+.cuartaPublicacion {
     margin: 0 0 0 25%;
 }
 
-.cuartaPublicacion p{
+.cuartaPublicacion p {
     width: 60%;
     font-family: 'Roboto Flex', sans-serif;
     margin: 0 0 1rem 0;
     font-size: 1.2rem;
 }
-.cuartaPublicacion img{
+
+.cuartaPublicacion img {
     padding: 0.7rem 0 0 1.3rem;
 }
 
-.fondoPublicacionesCuatro{
+.fondoPublicacionesCuatro {
     background-image: linear-gradient(black, #c7c0c0);
     width: 13.5rem;
     height: 14.5rem;
     border-radius: 1rem;
 }
 
-.comprar{
+.comprar {
     margin: 1rem 0 0 0;
 
 }
 
-.accesibilidadIphone h5{
+.accesibilidadIphone h5 {
     text-align: center;
-    margin: 5rem 0 ;
+    margin: 5rem 0;
     font-size: 2rem;
 }
 
-.accesibilidadIphoneParrafo{
+.accesibilidadIphoneParrafo {
     font-family: 'Roboto Flex', sans-serif;
     font-size: 1.5rem;
     padding: 0 1.2rem 0 1.2rem;
 }
 
-.bloqueItems{
+.bloqueItems {
     display: flex;
     justify-content: space-evenly;
     margin: 2rem 0 0 0;
     font-family: 'Roboto Flex', sans-serif;
-    
+
 }
 
-.columnasIphone li{
-  font-size: 1.3rem;
+.columnasIphone li {
+    font-size: 1.3rem;
 }
 
 @media screen and (max-width:1024px) {
@@ -480,15 +508,15 @@ margin: 0 0 6rem 0;
         height: 100vh;
         row-gap: 3.1rem;
         grid-template-areas: "priPu"
-                             "segPu"
-                             "terPu"
-                             "cuarPu"
-                             "accIpho"
-                             "pAccPar"
-                             "footer";
+            "segPu"
+            "terPu"
+            "cuarPu"
+            "accIpho"
+            "pAccPar"
+            "footer";
     }
 
-    .accesibilidadIphoneParrafo p{
+    .accesibilidadIphoneParrafo p {
         padding: 0 1rem;
     }
 
