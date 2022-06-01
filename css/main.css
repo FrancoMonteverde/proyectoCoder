@@ -1,0 +1,152 @@
+body {
+  background-color: #e4ddd7;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header nav ul {
+  display: flex;
+  justify-content: space-around; }
+
+.header {
+  background-color: #918b8b;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
+
+.hijos {
+  margin: 0.6rem;
+  list-style: none; }
+
+.header nav ul li a:hover {
+  color: white;
+  font-weight: 1.8rem; }
+
+.hijos a {
+  color: black;
+  text-decoration: none; }
+
+footer {
+  background-color: black;
+  height: 1%; }
+
+footer p {
+  text-align: center;
+  font-family: 'Roboto Flex', sans-serif; }
+
+.ipadGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  grid-template-areas: "mainP mainP mainP mainP" "secI secI secI secI"  "imaDI imaDI imaDI imaDI" "parrDI parrDI parrDI parrDI" "imaI imaI imaIDos imaIDos" "ipaPMa ipaPMa ipaPMa ipaPMa" "imaCom imaCom imaCom imaCom" "footer footer footer footer"; }
+
+.mainIpad {
+  grid-area: mainP; }
+
+.sectionIpad {
+  grid-area: secI; }
+
+.imagenDosIpad {
+  grid-area: imaDI; }
+
+.parrafoDosIpad {
+  grid-area: parrDI; }
+
+.imagenesIpad {
+  grid-area: imaI; }
+
+.imagenesIpadDos {
+  grid-area: imaIDos; }
+
+.ipadProMax {
+  grid-area: ipaPMa; }
+
+.imagenCompra {
+  grid-area: imaCom; }
+
+footer {
+  grid-area: footer; }
+
+.mainIpad h1 {
+  text-align: center;
+  font-family: 'PT Serif', serif;
+  color: #777474;
+  font-size: 3.1rem;
+  margin: 0 0 1rem 0;
+  margin: 0 0 5rem 0; }
+
+.mainIpad img {
+  width: 100%;
+  height: 30rem;
+  margin: 0 0 10% 0; }
+
+.sectionIpad h2 {
+  font-family: 'Sriracha', cursive;
+  margin: 0 0 0 1rem;
+  color: violet;
+  font-size: 1.8rem; }
+
+.sectionIpad p {
+  margin: 0 0 2rem 1rem;
+  font-size: 1.5rem;
+  font-family: 'Roboto Flex', sans-serif; }
+
+.imagenDosIpad {
+  margin: 0 0 0 1rem; }
+
+.parrafoDosIpad {
+  width: 90%;
+  height: 40%;
+  margin: 2rem 0 0 1rem; }
+
+.parrafoDosIpad p {
+  font-size: 1.5rem;
+  font-family: 'Roboto Flex', sans-serif; }
+
+.imagenesIpadDos {
+  margin: 3rem 0 0 30%;
+  width: 20rem;
+  height: 13rem;
+  background-image: linear-gradient(black, #c7c0c0);
+  border-radius: 1rem; }
+
+.imagenesIpadDos img {
+  padding: 1rem 0 0 1.2rem; }
+
+.imagenesIpad {
+  margin: 3rem 0 0 50%;
+  width: 21rem;
+  height: 13rem;
+  background-image: linear-gradient(black, #c7c0c0);
+  border-radius: 1rem; }
+
+.imagenesIpad img {
+  padding: 1.5rem 0 0 1rem;
+  margin: 0 0 2rem 0; }
+
+.ipadProMax {
+  margin: 2rem 0 0 1rem; }
+
+.ipadProMax h3 {
+  font-family: 'PT Serif', serif;
+  color: #777474;
+  font-size: 1.5rem;
+  margin: 2rem 0 2rem 0; }
+
+.imagenCompra {
+  margin: 0 0 5rem 0; }
+
+.imagenCompra img {
+  margin: 0 0 0 1rem; }
+
+.comprar {
+  margin: 0.5rem 0 0 1rem; }
+
+@media screen and (max-width: 1024px) {
+  .ipadGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "mainP mainP" "secI secI"  "imaDI imaDI" "parrDI parrDI" "imaI imaI" "imaIDos imaIDos" "ipaPMa ipaPMa" "imaCom imaCom" "footer footer"; }
+  .imagenesIpad {
+    margin: 2rem auto; }
+  .imagenesIpadDos {
+    margin: 2rem auto; } }

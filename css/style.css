@@ -5,7 +5,6 @@
 }
 
 /* Css de Index*/
-
 body {
     background-color: #e4ddd7;
 }
@@ -520,115 +519,6 @@ footer p {
         padding: 0 1rem;
     }
 
-}
-
-/*Ipad*/
-
-.mainIpad h1 {
-    text-align: center;
-    font-family: 'PT Serif', serif;
-    margin: 20px 0px 40px 0px;
-    color: #777474;
-    font-size: 50px;
-}
-
-.sectionIpad h2 {
-    margin: 30px 30px 10px 30px;
-    font-family: 'Sriracha', cursive;
-    color: #cf1883;
-    font-size: 30px;
-}
-
-.sectionIpad p {
-    font-size: 25px;
-    margin: 0 20px 0 20px;
-    font-family: 'PT Sans', sans-serif;
-}
-
-.imagenDosIpad {
-    background-color: rgb(41, 39, 39);
-    width: 400px;
-    margin: 30px;
-    border-radius: 20px;
-}
-
-.imagenDosIpad img {
-    padding: 20px;
-    width: 400px;
-}
-
-.parrafoDosIpad {
-    width: 600px;
-    font-size: 25px;
-    margin: 0 20px 0 700px;
-    font-family: 'PT Sans', sans-serif;
-    text-align: left;
-}
-
-.imagenesIpad {
-    margin: 30px 0 90px 650px;
-}
-
-.imagenesIpad img {
-    width: 250px;
-}
-
-.ipadProMax {
-    margin: 30px 30px 10px 30px;
-    font-family: 'Sriracha', cursive;
-    color: #777474;
-    font-size: 30px;
-}
-
-/*AirdPods*/
-
-.mainAirdPods h1 {
-    text-align: center;
-    font-family: 'PT Serif', serif;
-    margin: 20px 0px 40px 0px;
-    color: #866cce;
-    font-size: 50px;
-}
-
-.sectionAird {
-    margin: 70px 0 0 0;
-}
-
-.sectionAird h2 {
-    font-family: 'Sriracha', cursive;
-    text-align: center;
-    color: #777474;
-    font-size: 30px;
-}
-
-.sectionAird p {
-    background-color: #866cce;
-    height: 100px;
-    font-size: 25px;
-    padding: 15px 0 10px 10px;
-    font-family: 'PT Sans', sans-serif;
-}
-
-.airdUsos {
-    margin: 90px 0 0 0;
-}
-
-.airdUsos h3 {
-    margin: 0 0 30px 900px;
-    color: #866cce;
-    font-size: 25px;
-    font-family: 'PT Sans', sans-serif;
-}
-
-.airdUsos p {
-    font-size: 25px;
-    font-family: 'PT Sans', sans-serif;
-    width: 500px;
-    margin: 0 0 0 800px;
-}
-
-.airdImagenUso img {
-    width: 500px;
 }
 
 /*Contacto*/
