@@ -1,17 +1,16 @@
 %body {
     background-color: #e4ddd7;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 %flex {
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
 }
 
 %header {
     background-color: #918b8b;
+    padding: 0.6rem;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -34,10 +33,13 @@
 
 %footer {
     background-color: black;
-    height: 1%;
+    height:0.2rem;
+    margin: 100px 0 0 0;
+    text-align: center;
 }
 
 %footerP {
     text-align: center;
     font-family: 'Roboto Flex', sans-serif;
+    padding: 1% 0 0 0;
 }

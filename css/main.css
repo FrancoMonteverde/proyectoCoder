@@ -1,15 +1,14 @@
 body {
-  background-color: #e4ddd7;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  background-color: #e4ddd7; }
 
 .header nav ul {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-direction: row; }
 
 .header {
   background-color: #918b8b;
+  padding: 0.6rem;
   position: sticky;
   top: 0;
   z-index: 1; }
@@ -28,16 +27,24 @@ body {
 
 footer {
   background-color: black;
-  height: 1%; }
+  height: 0.2rem;
+  margin: 100px 0 0 0;
+  text-align: center; }
 
 footer p {
   text-align: center;
-  font-family: 'Roboto Flex', sans-serif; }
+  font-family: 'Roboto Flex', sans-serif;
+  padding: 1% 0 0 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 .ipadGrid {
   display: grid;
   grid-template-columns: repeat(4, 3fr);
-  grid-template-areas: "mainP mainP mainP mainP" "secI secI secI secI"  "imaDI imaDI imaDI imaDI" "parrDI parrDI parrDI parrDI" "imaI imaI imaIDos imaIDos" "ipaPMa ipaPMa ipaPMa ipaPMa" "imaCom imaCom imaCom imaCom" "footer footer footer footer"; }
+  grid-template-areas: "mainP mainP mainP mainP" "secI secI secI secI" "imaDI imaDI imaDI imaDI" "parrDI parrDI parrDI parrDI" "imaI imaI imaIDos imaIDos" "ipaPMa ipaPMa ipaPMa ipaPMa" "imaCom imaCom imaCom imaCom" "ipadEco ipadEco ipadEco ipadEco" "footer footer footer footer"; }
 
 .mainIpad {
   grid-area: mainP; }
@@ -63,8 +70,15 @@ footer p {
 .imagenCompra {
   grid-area: imaCom; }
 
+.ipadEconomica {
+  grid-area: ipadEco; }
+
 footer {
   grid-area: footer; }
+
+/*fin de grids*/
+.mainIpad {
+  margin: 2rem 0 0 0; }
 
 .mainIpad h1 {
   text-align: center;
@@ -103,21 +117,13 @@ footer {
   font-family: 'Roboto Flex', sans-serif; }
 
 .imagenesIpadDos {
-  margin: 3rem 0 0 30%;
-  width: 20rem;
-  height: 13rem;
-  background-image: linear-gradient(black, #c7c0c0);
-  border-radius: 1rem; }
+  margin: 3rem 0 0 30%; }
 
 .imagenesIpadDos img {
   padding: 1rem 0 0 1.2rem; }
 
 .imagenesIpad {
-  margin: 3rem 0 0 50%;
-  width: 21rem;
-  height: 13rem;
-  background-image: linear-gradient(black, #c7c0c0);
-  border-radius: 1rem; }
+  margin: 3rem 0 0 50%; }
 
 .imagenesIpad img {
   padding: 1.5rem 0 0 1rem;
@@ -138,14 +144,38 @@ footer {
 .imagenCompra img {
   margin: 0 0 0 1rem; }
 
-.comprar {
+.comprarPremium {
   margin: 0.5rem 0 0 1rem; }
+
+.comprarPremium input {
+  background-color: goldenrod; }
+
+.ipadEconomica h3 {
+  font-family: 'Sriracha', cursive;
+  margin: 0 0 0 1rem;
+  color: violet;
+  font-size: 1.8rem; }
+
+.ipadEconomica p {
+  margin: 0 0 2rem 1rem;
+  font-size: 1.5rem;
+  font-family: 'Roboto Flex', sans-serif; }
+
+.ipadEconomica img {
+  margin: 0 0 0 1rem;
+  width: 15rem; }
+
+.comprarEstandar {
+  margin: 0 0 0 1rem; }
+
+.comprarEstandar input {
+  background-color: white; }
 
 @media screen and (max-width: 1024px) {
   .ipadGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "mainP mainP" "secI secI"  "imaDI imaDI" "parrDI parrDI" "imaI imaI" "imaIDos imaIDos" "ipaPMa ipaPMa" "imaCom imaCom" "footer footer"; }
+    grid-template-areas: "mainP mainP" "secI secI" "imaDI imaDI" "parrDI parrDI" "imaI imaI" "imaIDos imaIDos" "ipaPMa ipaPMa" "imaCom imaCom" "ipadEco ipadEco" "footer footer"; }
   .imagenesIpad {
     margin: 2rem auto; }
   .imagenesIpadDos {
