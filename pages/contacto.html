@@ -15,6 +15,10 @@
 
     <title>Contacto</title>
 
+    <!-- Link JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <!--Link de css-->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -41,7 +45,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -77,7 +81,7 @@
 
     <main class="row">
 
-        <h2 class="col-12 text-center my-5">
+        <h2 class="col-12 text-center my-5 display-2 text-muted">
             Estamos para ayudarte!
         </h2>
 
@@ -85,16 +89,15 @@
     <section class="row text-center">
 
         <p class="col-10">
-
-        <div>
+        <p class="text-center my-2 blockquote">
             Nuestros datos:
-        </div>
-        <ul>
+        </p>
+
+        <ul class="blockquote text-secondary">
             <li>Nùmero de telefono:54+ 1130137693</li>
             <li>Email:empresaiphone@hotmail.com</li>
             <li>Estamos en: 25 de mayo 1632</li>
         </ul>
-
         </p>
 
     </section>
@@ -103,7 +106,7 @@
         <fieldset>
             <legend class="row justify-content-center">Completa tus datos</legend>
             <!--Para nombre-->
-            <div class="row text-center">
+            <div class="row text-center my-2 text-secondary">
                 <label for="nombre">Completa tu nombre</label>
 
                 <div>
@@ -113,7 +116,7 @@
             </div>
 
             <!--Para email-->
-            <div class="row text-center">
+            <div class="row text-center my-2 text-secondary">
                 <label for="email">Completa tu email</label>
 
                 <div>
@@ -122,11 +125,11 @@
             </div>
 
             <!--Para paìs-->
-
-            <div class="row text-center">
+            <div class="row text-center my-2 text-secondary">
                 <label for="pais">Seleccione su paìs</label>
                 <div>
                     <select name="pais" id="">
+                        <option value="">...</option>
                         <option value="Argentina">Argentina</option>
                         <option value="Brasil">Brasil</option>
                         <option value="Uruguay">Uruguay</option>
@@ -137,46 +140,60 @@
 
             </div>
             <!--Mensaje-->
-            <div class="row text-center">
+            <div class="row text-center my-2 text-secondary">
                 <label for="text">¿En que la podemos ayudar?</label>
                 <div>
                     <input type="text" name=text placeholder="Mensaje">
                 </div>
-                 <!--Envio de formulario-->
-                <div>
+                <!--Envio de formulario-->
+                <div class="my-2">
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Restablecer">
                 </div>
             </div>
-
         </fieldset>
 
     </form>
 
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-            <a href="https://www.google.com.ar/maps/place/25+de+Mayo+1632/@-34.57779,-58.595598,13z/data=!4m9!1m2!2m1!1s25+de+mayo+!3m5!1s0x95bcb70ae3cc9ac7:0x3cc666fc1c41b409!8m2!3d-34.57779!4d-58.52968!15sCgoyNSBkZSBtYXlvkgEIYnVzX3N0b3A"
-                target="_blank" class="btn btn-primary">Ubicación</a>
+    <div class="row">
+
+        <div class="card col-4 my-5 mx-auto bg-success p-2 text-dark bg-opacity-50" style="width: 18rem;">
+            <div class="row-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Ubicación</h5>
+                    <p class="card-text">Para mejor atención puedes visitarnos dentro de nuestro horario hábil: 08hs a
+                        18hs.</p>
+                    <a href="https://www.google.com.ar/maps/place/25+de+Mayo+1632/@-34.57779,-58.595598,13z/data=!4m9!1m2!2m1!1s25+de+mayo+!3m5!1s0x95bcb70ae3cc9ac7:0x3cc666fc1c41b409!8m2!3d-34.57779!4d-58.52968!15sCgoyNSBkZSBtYXlvkgEIYnVzX3N0b3A"
+                        target="_blank" class="btn btn-primary">Ubicación</a>
+                </div>
+            </div>
         </div>
 
-        <footer>
-            <p>
-                Reservado todos los derechos.No se permite la reproducciòn total o parcial de este sitio
-            </p>
+        <div class="card col-6 my-5 mx-auto bg-success p-2 text-dark bg-opacity-50 " style="width: 18rem;">
+            <div class="row-md">
+                <div class="card-body">
+                    <h5 class="card-title">Sugerencias</h5>
+                    <p>
+                        Tu opinión nos importa.Para un mejor servicio realize su un comentario.
+                    </p>
+                    <input class="py-3" type="text" name=text placeholder="Mensaje">
 
-            <p>
-                Creado por <strong>Monteverde Franco</strong>
-            </p>
-        </footer>
-
+                </div>
+            </div>
+        </div>
     </div>
 
-    </div class="container-fluid">
+    <footer class=" class=position-absolute end-0 bg m-0" style="height: 0.05rem;">
+        <p class="px-3">
+            Reservado todos los derechos.No se permite la reproducciòn total o parcial de este sitio
+        </p>
+        <p>
+            Creado por <strong>Monteverde Franco</strong>
+        </p>
+
+    </footer>
+
+    </div>
 </body>
 
 </html>

@@ -65,7 +65,7 @@ footer {
 /*Fin d grids*/
 
 .header {
-    background-color: #918b8b;
+    background-color: #c5baba;
     padding: 0.6rem;
 }
 
@@ -266,7 +266,7 @@ main h1 {
 
 footer {
     background-color: black;
-    height: 1%;
+    height: 0.005rem;
     margin: 100px 0 0 0;
     text-align: center;
 }
