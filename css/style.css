@@ -523,29 +523,3 @@ footer p {
 
 /*Contacto*/
 
-.mainContacto {
-    margin: 40px 0 20px 20px;
-}
-
-.sectionContacto {
-    margin: 0 0 20px 20px;
-}
-
-.sectionContacto ul li {
-    list-style: none;
-}
-
-.formContacto {
-    margin: 0 0 0 20px;
-    width: 300px;
-}
-
-.formContacto fieldset {
-    padding: 10px 0 10px 50px;
-}
-
-.sectionContacto div {
-    font-size: 20px;
-    font-weight: 200px;
-    margin: 0 0 5px 0;
-}
