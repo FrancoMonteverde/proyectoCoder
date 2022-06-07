@@ -295,72 +295,71 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(9, fr);
         grid-template-areas: "subTitulo subTitulo"
-                             "imgMu  imgMu"
-                             "imgMuDos imgMuDos"
-                             "parrIn parrIn"
-                             "secDIn secDIn"
-                             "fonIclou fonIclou"
-                             "padreAcc padreAcc"
-                             "padreCli padreCli"
-                             "footer footer";
+            "imgMu  imgMu"
+            "imgMuDos imgMuDos"
+            "parrIn parrIn"
+            "secDIn secDIn"
+            "fonIclou fonIclou"
+            "padreAcc padreAcc"
+            "padreCli padreCli"
+            "footer footer";
 
     }
-        .imagenMuestra {
-            grid-area: imgMu;
-        }
 
-        .imagenMuestraDos {
-            grid-area: imgMuDos;
-        }
+    .imagenMuestra {
+        grid-area: imgMu;
+    }
 
-        .parrafoIndex {
-            grid-area: parrIn;
-        }
+    .imagenMuestraDos {
+        grid-area: imgMuDos;
+    }
 
-        .sectionDosIndex {
-            grid-area: secDIn;
-        }
+    .parrafoIndex {
+        grid-area: parrIn;
+    }
 
-        .fondoIcloud {
-            grid-area: fonIclou;
-        }
+    .sectionDosIndex {
+        grid-area: secDIn;
+    }
 
-        .padreAccesibilidad {
-            grid-area: padreAcc;
-        }
+    .fondoIcloud {
+        grid-area: fonIclou;
+    }
 
-        .padreClima {
-            grid-area: padreCli;
-        }
+    .padreAccesibilidad {
+        grid-area: padreAcc;
+    }
 
-        footer {
-            grid-area: footer;
-        }
+    .padreClima {
+        grid-area: padreCli;
+    }
 
-        .imagenUno{
-            text-align: center;
-        }
+    footer {
+        grid-area: footer;
+    }
 
-        .fondoIcloud {
-            height: 90%;
-        }
+    .imagenUno {
+        text-align: center;
+    }
 
-        .imagenMuestra {
-            margin: 5% auto;
-        }
+    .fondoIcloud {
+        height: 90%;
+    }
 
-        .imagenMuestraDos {
-            margin: 5% auto;
-        }
+    .imagenMuestra {
+        margin: 5% auto;
+    }
 
-        .parrafoIndex {
-            margin: 0 0 0 5%;
-        }
+    .imagenMuestraDos {
+        margin: 5% auto;
+    }
+
+    .parrafoIndex {
+        margin: 0 0 0 5%;
+    }
 }
 
 /*Css de Iphone*/
-
-/*Contacto*/
 
 .padreGridsIphone {
     display: grid;
@@ -499,8 +498,6 @@ footer p {
     .padreGridsIphone {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(7, 1fr);
-        row-gap: 3.1rem;
         grid-template-areas: "priPu"
             "segPu"
             "terPu"
@@ -514,4 +511,153 @@ footer p {
         padding: 0 1rem;
     }
 
+}
+
+
+/*Contacto*/
+
+.gridAird {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "secAir  secAir"
+        "airU airU"
+        "airImU airImU"
+        "comAir comAir"
+        "footer footer";
+}
+
+.sectionAird {
+    grid-area: secAir;
+}
+
+.airdUsos {
+    grid-area: airU;
+}
+
+.airdImgUso {
+    grid-area: airImU;
+}
+
+.airdImgDos {
+    grid-area: airIDos;
+}
+
+.comprarAir {
+    grid-area: comAir;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+.mainAirdPods {
+    margin: 0 auto;
+}
+
+.mainImg {
+    background-color: #222121;
+    width: 100%;
+}
+
+.mainAirdPods h1 {
+    margin: 4rem 0 3rem 0;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    color: #777474;
+    font-size: 3.1rem;
+}
+
+.mainAirdPods img {
+    width: 50rem;
+    width: 70%;
+    margin: 0 16% 3rem 16%;
+    padding: 4rem 2.5rem 0 0;
+}
+
+.sectionAird h2 {
+    margin: 4rem 0 1rem 0;
+    font-family: 'Sriracha', cursive;
+    text-align: center;
+    color: #777474;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.sectionAird p {
+    width: 70%;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.airdUsos {
+    margin: 4rem 0 0 1rem;
+}
+
+.airdImg img{
+    width: 24rem;
+}
+
+.airdImgDos{
+    padding: 2rem 0 0 0;
+}
+
+.airdUsos h3 {
+    font-family: 'Sriracha', cursive;
+    color: #777474;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.airdUsos p {
+    width: 50%;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.airdImgUso {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0 4rem 0;
+}
+
+.comprarAir {
+    width: 10rem;
+    margin: 0 50%;
+}
+
+.comprarAir input{
+    width:5rem ;
+    height: 1.5rem;
+}
+
+@media screen and (max-width:1024px) {
+    .gridAird {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "secAir"
+        "airU"
+        "airImU"
+        "comAir"
+        "footer";
+    }
+
+    .airdImgUso{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .airdImg{
+        margin: 0 auto;
+    }
+
+    .airdImgDos{
+        margin: 2rem auto;
+    }
+
+    .comprarAir {
+        margin: 0 50%;
+    }
 }
