@@ -1,6 +1,7 @@
 @import "utilities/extend";
 @import "utilities/maps";
 @import "utilities/mixin";
+@import"utilities/variables";
 
 *{
     margin: 0;
@@ -185,7 +186,7 @@ footer {
 .ipadEconomica h3{
     font-family: 'Sriracha', cursive;
     margin: 0 0 0 1rem;
-    color: violet;
+    color: $color-h3;
     font-size: 1.8rem;
 }
 
