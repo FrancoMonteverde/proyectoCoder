@@ -1,7 +1,7 @@
 {
   "name": "proyectocoder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Es un sitio web en el cual puedes comprar todos los articulos de iphone.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

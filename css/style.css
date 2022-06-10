@@ -389,12 +389,7 @@ footer p {
     padding: 0.75rem 0 0 1.25rem;
 }
 
-.fondoPublicaciones {
-    background-image: linear-gradient(black, #c7c0c0);
-    width: 20rem;
-    height: 13rem;
-    border-radius: 1rem;
-}
+
 
 .segundaPublicacion {
     margin: 0 0 5rem 25%;
@@ -413,13 +408,6 @@ footer p {
     padding: 0.5rem 0 0 1.7rem;
 }
 
-.fondoPublicacionesDos {
-    background-image: linear-gradient(black, #c7c0c0);
-    width: 20rem;
-    height: 13rem;
-    border-radius: 1rem;
-}
-
 .terceraPublicacion {
     margin: 0 0 5rem 25%;
 }
@@ -435,13 +423,6 @@ footer p {
     padding: 0.7rem 0 0 1.3rem;
 }
 
-.fondoPublicacionesTres {
-    background-image: linear-gradient(black, #c7c0c0);
-    width: 13.5rem;
-    height: 14.5rem;
-    border-radius: 1rem;
-}
-
 .cuartaPublicacion {
     margin: 0 0 10rem 25%;
 }
@@ -455,13 +436,6 @@ footer p {
 
 .cuartaPublicacion img {
     padding: 0.7rem 0 0 1.3rem;
-}
-
-.fondoPublicacionesCuatro {
-    background-image: linear-gradient(black, #c7c0c0);
-    width: 13.5rem;
-    height: 14.5rem;
-    border-radius: 1rem;
 }
 
 .comprar {
