@@ -6,7 +6,7 @@
 
 /* Css de Index*/
 body {
-    background-color: #e4ddd7;
+    background-color: #f8f9fa;
 }
 
 .padreGridsIndex {
@@ -65,7 +65,7 @@ footer {
 /*Fin d grids*/
 
 .header {
-    background-color: #c5baba;
+    background-color: #dee2e6;
     padding: 0.6rem;
     position: sticky;
     top: 0;
@@ -114,9 +114,9 @@ footer {
 main h1 {
     text-align: center;
     font-family: 'PT Serif', serif;
-    color: #777474;
+    color: #495057;
     font-size: 3.1rem;
-    margin: 0 0 1rem 0;
+    margin: 6rem 0 3rem 0;
 }
 
 .subTitulo {
@@ -371,7 +371,9 @@ footer p {
 }
 
 .mainIphone h1 {
-    margin: 4rem 0 10rem 0;
+    margin: 6rem 0 10rem 0;
+    color: #495057;
+    font-family: 'PT Serif', serif;
 }
 
 .primerPublicacion {
@@ -535,10 +537,10 @@ footer {
 }
 
 .mainAirdPods h1 {
-    margin: 4rem 0 3rem 0;
+    margin: 6rem 0 3rem 0;
     text-align: center;
     font-family: 'PT Serif', serif;
-    color: #777474;
+    color: #495057;
     font-size: 3.1rem;
 }
 
